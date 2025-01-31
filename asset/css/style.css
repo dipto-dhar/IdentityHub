@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Aeonik';
+    src: url('AeonikTRIAL-Regular.otf');
+}
 :root {
     --primary-color: #090EDB;
     --secondary-color: #8D1EA2;
@@ -25,6 +29,13 @@ section{
 h1,h2,h3{
     font-family: 'Sora', sans-serif;
 }
+
+.gradient-text{
+    background: linear-gradient(87.49deg, #4809db 24.27%, #8D1EA2 87.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
 .section-title{
     font-family: "Sora", sans-serif;
     font-weight: 600;
@@ -36,7 +47,7 @@ h1,h2,h3{
     color: var(--heading-color);
 }
 .section-description{
-    font-family: "Aeonik Ragular", sans-serif;
+    font-family: 'Aeonik';
     font-weight: 400;
     line-height: 33.6px;
     font-size: 24px;
@@ -123,6 +134,7 @@ h1,h2,h3{
     position: relative;
     margin: 20px auto;
     padding: 0 10px;
+    padding-bottom: 3px;
 }
 .top-tag::after{
     content: '';
@@ -132,6 +144,7 @@ h1,h2,h3{
     position: absolute;
     border-radius: 30px;
     background: linear-gradient(45deg, #090EDB, #8D1EA2);
+    top: -1px;
 }
 .hero-header {
     margin-top: 20px;
@@ -146,7 +159,7 @@ h1,h2,h3{
 }
 .underline {
     position: relative;
-    display: ;
+
 }
 .underline::after {
     content: "";
@@ -189,7 +202,7 @@ h1,h2,h3{
     padding: 10px;
     border-radius: 15px;
     background: linear-gradient(45deg, #1b1c3661, #70717a61);
-    border: 1px solid #ffffff59;
+    border: 1px solid #ffffff1c;
 }
 .hero-img-container .info .content p{
     text-align: left;
@@ -198,6 +211,12 @@ h1,h2,h3{
     color: #CAC6DD;
     margin: auto;
 }
+
+
+
+
+
+
 .service-cards{
     max-width: 1320px;
     display: flex;
@@ -234,7 +253,7 @@ h1,h2,h3{
     max-width: 307px;
     font-size: 28px;
     color:#D6DDF8;
-    font-family: "Aeonik Regular";
+    font-family: "Aeonik";
     font-weight: 500;
 }
 .service-cards .card p{
@@ -285,7 +304,7 @@ h1,h2,h3{
     font-size: 32px;
     line-height: 38px;
     font-weight: 500;
-    font-family: 'Aeonik Regular' sans-serif;
+    font-family: 'Aeonik' sans-serif;
 }
 .features-container ul{
     padding: 0;
@@ -309,7 +328,7 @@ h1,h2,h3{
     margin: 25px 20px 0 0;
 }
 .features-container ul li p{
-    font-family: 'Aeonik Regular' sans-serif;
+    font-family: 'Aeonik' sans-serif;
     margin:20px 0 0 0 ;
 }
 .features-container .content{
@@ -433,7 +452,7 @@ h1,h2,h3{
     border-radius: 22px;
     background: linear-gradient(80.42deg, rgba(0, 0, 0, 0.16) 25.25%, rgba(83, 84, 108, 0.16) 98.05%);
     backdrop-filter: blur(16px);
-    padding: 30px;
+    padding: 40px;
 }
 .testimonial-container .testimonialCarousel{
     width: 100%;
@@ -447,8 +466,8 @@ h1,h2,h3{
     font-size: 14px;
 }
 .testimonial-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    background: linear-gradient(79.59deg, rgba(51, 51, 62, 0.16) 6.21%, rgba(83, 84, 108, 0.16) 98.02%);
+    border-radius: 20px;
     max-width: 100%;
 }
 .carousel-control-next,.carousel-control-prev{
@@ -459,11 +478,11 @@ h1,h2,h3{
     background: linear-gradient(87.95deg, #090EDB -15.78%, #E73DC4 102.06%);
     border: 1.6px solid;
 }
-.carousel-control-next{
-    margin-right: -50px;
+.carousel-control-next {
+    margin-right: -65px;
 }
 .carousel-control-prev{
-    margin-left: -50px;
+    margin-left: -65px;
 }
 .carousel-indicators [data-bs-target] {
     width: 8px;
