@@ -566,6 +566,12 @@ h1,h2,h3{
     text-align: center;
     text-decoration: none;
     margin: auto;
+    cursor: pointer;
+    transition: .5s;
+}
+.cta-container .cta-btn:hover{
+    background: linear-gradient(90deg, #3a02bb, #c702c7);
+
 }
 /* Footer Styling */
 .footer {
